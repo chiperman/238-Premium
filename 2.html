@@ -248,7 +248,7 @@
         <div>
             <a class="tip" style="width: fit-content;">PG 总共发表了 {{count}} 条金句</a>
         </div>
-        <section class=" item" v-bind:class="type" v-for="item in contents" v-cloak>
+        <section class="item" v-bind:class="'type-'+item.attributes.type" v-for="item in contents" v-cloak>
             <p v-html='item.attributes.content'></p>
             <tag id="tag" v-html='item.attributes.tag'></tag>
             <span class="equipment"></span>

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>x 言 x 语</title>
+    <title>p 言 p 语</title>
     <!-- <link rel="shortcut icon" href="./favicon.ico" /> -->
     <link type="text/css" rel="stylesheet" href="https://at.alicdn.com/t/font_1755564_z4mhxbw13mq.css">
     </link>
@@ -20,7 +20,7 @@
     <meta name="google" content="index,follow" />
     <meta name="googlebot" content="index,follow" />
     <meta name="verify" content="index,follow" />
-    <meta name="apple-mobile-web-app-title" content="x言x语">
+    <meta name="apple-mobile-web-app-title" content="p 言 p 语">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 </head>
@@ -198,7 +198,7 @@
 
     .type-0 .equipment::after {
         float: right;
-        content: "PC💻";
+        content: "🐍 by PG ";
         font-size: 15px;
     }
 
@@ -209,7 +209,7 @@
 
     .type-1 .equipment::after {
         float: right;
-        content: "iPhone XR📱";
+        content: "🐍 by PG ";
         font-size: 15px;
     }
 
@@ -236,18 +236,17 @@
 <body>
     <header id="header">
         <div class="title">
-            <h1>x 言 x 语</h1>
+            <h1>p 言 p 语</h1>
         </div>
     </header>
     <main id="app">
         <aside>
             <p id="describe">
-                「论如何逃离微信社交圈」
+                本站所有素材来自 PG 在 238 群🐍的，侵权删。
             </p>
         </aside>
         <div>
-            <a class="tip" style="width: fit-content;">现在总共 x 了 {{count}} 条</a>
-            <a class="x-link" href="dream.html" style="float: right;">Dream</a>
+            <a class="tip" style="width: fit-content;">PG 总共发表了 {{count}} 条金句</a>
         </div>
         <section class="item" v-bind:class="'type-'+item.attributes.type" v-for="item in contents" v-cloak>
             <p v-html='item.attributes.content'></p>
@@ -256,13 +255,13 @@
             <time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time>
         </section>
         <div class="load-ctn">
-            <button class="load-btn" v-on:click="loadMore" v-if="contents" v-cloak>再翻翻</button>
+            <button class="load-btn" v-on:click="loadMore" v-if="contents" v-cloak>继续学习</button>
             <p class="tip" v-else>Loading...</p>
         </div>
     </main>
     <footer>
         <p class="center-text">
-            <b>Crafted with 💔 by <a href="https://chiperman.github.io/about/" target="_blank">chiperman</a></b>
+            <b>Crafted with 💔 by <a href="https://chiperman.github.io/about/" target="_blank">chiperman for PG</a></b>
         </p>
     </footer>
 </body>
@@ -278,7 +277,7 @@
     });
 
     //设定存储数据的 className
-    var query = new AV.Query('content');
+    var query = new AV.Query('pg');
 
     var app = new Vue({
         el: '#app',
@@ -323,7 +322,7 @@
     function getData(page = 0) {
         query.descending('createdAt').skip(page * 20).limit(20).find().then(function (results) {
             if (results.length == 0) {
-                alert('灵感枯竭了~')
+                alert('请耐心等待 PG 的更新~')
             } else {
                 let resC = results;
                 reqData = false;
