@@ -231,12 +231,11 @@
     <main id="app">
         <aside>
             <p id="describe">
-                本站所有素材来自 PG 在 238 群🐍的,侵权删。
+                本站所有素材来自 PG 在 238 群🐍的，侵权删。
             </p>
         </aside>
         <div>
             <a class="tip" style="width: fit-content;">PG 总共发表了 {{count}} 条金句</a>
-            <a class="x-link" href="dream.html" style="float: right;">Dream</a>
         </div>
         <section class=" item" v-bind:class="type" v-for="item in contents" v-cloak>
             <p v-html='item.attributes.content'></p>
@@ -245,7 +244,7 @@
             <time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time>
         </section>
         <div class="load-ctn">
-            <button class="load-btn" v-on:click="loadMore" v-if="contents" v-cloak>继续看看 PG 语录</button>
+            <button class="load-btn" v-on:click="loadMore" v-if="contents" v-cloak>继续学习</button>
             <p class="tip" v-else>Loading...</p>
         </div>
     </main>
