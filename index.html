@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>p 言 p 语</title>
+    <title>P 言 P 语</title>
     <!-- <link rel="shortcut icon" href="./favicon.ico" /> -->
     <link type="text/css" rel="stylesheet" href="https://at.alicdn.com/t/font_1755564_z4mhxbw13mq.css">
     </link>
@@ -198,7 +198,7 @@
 
     .type-0 .equipment::after {
         float: right;
-        content: "🐍 by PG ";
+        content: "2388888！";
         font-size: 15px;
     }
 
@@ -209,7 +209,7 @@
 
     .type-1 .equipment::after {
         float: right;
-        content: "🐍 by PG ";
+        content: "2388888！";
         font-size: 15px;
     }
 
@@ -236,17 +236,17 @@
 <body>
     <header id="header">
         <div class="title">
-            <h1>p 言 p 语</h1>
+            <h1>P 言 P 语</h1>
         </div>
     </header>
     <main id="app">
         <aside>
             <p id="describe">
-                本站所有素材来自 PG 在 238 群🐍的，侵权删。
+                素材来自 238 群，纯属虚构。
             </p>
         </aside>
         <div>
-            <a class="tip" style="width: fit-content;">PG 总共发表了 {{count}} 条金句</a>
+            <a class="tip" style="width: fit-content;">五常以及富婆 总共发表了 {{count}} 条金句</a>
         </div>
         <section class="item" v-bind:class="'type-'+item.attributes.type" v-for="item in contents" v-cloak>
             <p v-html='item.attributes.content'></p>
@@ -261,7 +261,8 @@
     </main>
     <footer>
         <p class="center-text">
-            <b>Crafted with 💔 by <a href="https://chiperman.github.io/about/" target="_blank">chiperman for PG</a></b>
+            <b>Crafted with 💔 by <a href="https://chiperman.github.io/about/" target="_blank">chiperman for
+                    238！</a></b>
         </p>
     </footer>
 </body>
@@ -322,7 +323,7 @@
     function getData(page = 0) {
         query.descending('createdAt').skip(page * 20).limit(20).find().then(function (results) {
             if (results.length == 0) {
-                alert('请耐心等待 PG 的更新~')
+                alert('请耐心等待 238 的更新~')
             } else {
                 let resC = results;
                 reqData = false;
