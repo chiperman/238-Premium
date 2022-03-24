@@ -242,7 +242,7 @@
     <main id="app">
         <aside>
             <p id="describe">
-                所有素材来自 238 群，纯属虚构。
+                所有素材均来自 238 群，经过适当夸张手法进行修饰，请勿当真。
             </p>
         </aside>
         <div>
@@ -323,7 +323,7 @@
     function getData(page = 0) {
         query.descending('createdAt').skip(page * 20).limit(20).find().then(function (results) {
             if (results.length == 0) {
-                alert('请耐心等待 238 的更新~')
+                alert('请耐心等待 238 大佬们的 P 言 P 语~')
             } else {
                 let resC = results;
                 reqData = false;
